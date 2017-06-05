@@ -54,7 +54,7 @@ class Shurmark:
 
     def writeslide(self, numslides = 1):
         if numslides > 99 or numslides < 1:
-            print "number of slides must be between 1 and 99, prining 1 slide instead"
+            print "number of slides must be between 1 and 99, printing 1 slide instead"
         if numslides != 1:
             self.ser.write("#G"+str(numslides))
         self.ser.write("\r\n")
